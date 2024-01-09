@@ -103,6 +103,9 @@ const Home = () => {
 
       </div>
 
+      {/* aboutjs */}
+      <About/>
+
       {/* aggregator */}
       <Aggregator/>
 
