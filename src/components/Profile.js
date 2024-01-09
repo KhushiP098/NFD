@@ -2,16 +2,16 @@ import React from 'react'
 
 const Profile = ({item,show,setShow}) => {
 
-    const handler=(Id)=>{
+    const Handler=(Id)=>{
        setShow(Id);
     }
 
-   const handle=()=>{
+   const handleDisplay=()=>{
     setShow(0);
    }
 
   return (
-    <div  onMouseEnter={()=>handler(item.id)} onMouseLeave={handle}
+    <div  onMouseEnter={()=>Handler(item.id)} onMouseLeave={handleDisplay}
     key={item.id} className={` ${show===item.id?"translate-x-[30px] z-1 duration-1000 linear ":"-translate-x-[30px] duration-700 linear "} w-[200px] m-5 h-[300px] font-serif flex flex-col  items-center ${show? "" :"justify-center"} `}>
       
      {
