@@ -12,7 +12,7 @@ const Profile = ({item,show,setShow}) => {
 
   return (
     <div  onMouseEnter={()=>Handler(item.id)} onMouseLeave={handleDisplay}
-    key={item.id} className={` ${show===item.id?"translate-x-[30px] z-10 duration-1000 linear ":"-translate-x-[30px] duration-700 linear "} md:m-5 m-10 w-[120px] sm:bg-none bg-white h-[200px] md:w-[200px] md:h-[300px] font-serif flex flex-col  items-center ${show? "" :"justify-center"} `}>
+    key={item.id} className={` ${show===item.id?"translate-x-[30px] z-10 duration-1000 linear ":"-translate-x-[30px] duration-700 linear "} md:m-5 m-10 w-[120px] sm:bg-none h-[200px] md:w-[200px] md:h-[300px] font-serif flex flex-col  items-center ${show? "" :"justify-center"} `}>
       
      {
         show===item.id?
