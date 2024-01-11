@@ -47,7 +47,7 @@ const Header = () => {
         {/* logos */}
         <div className='flex gap-5 items-center justify-between w-[170px] ml-10 ' >
           <img src={Logo2} />
-          <img src={Logo} />
+         <Link to='/'><img src={Logo} /></Link> 
         </div>
 
         <img src={Icon} className='text-white  w-[50px] h-[30px] mr-10 block xl:hidden '/>

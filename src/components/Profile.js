@@ -12,7 +12,7 @@ const Profile = ({item,show,setShow}) => {
 
   return (
     <div  onMouseEnter={()=>Handler(item.id)} onMouseLeave={handleDisplay}
-    key={item.id} className={` ${show===item.id?"translate-x-[30px] z-1 duration-1000 linear ":"-translate-x-[30px] duration-700 linear "} w-[200px] m-5 h-[300px] font-serif flex flex-col  items-center ${show? "" :"justify-center"} `}>
+    key={item.id} className={` ${show===item.id?"translate-x-[30px] z-10 duration-1000 linear ":"-translate-x-[30px] duration-700 linear "} md:m-5 m-10 w-[120px] sm:bg-none bg-white h-[200px] md:w-[200px] md:h-[300px] font-serif flex flex-col  items-center ${show? "" :"justify-center"} `}>
       
      {
         show===item.id?
@@ -21,9 +21,9 @@ const Profile = ({item,show,setShow}) => {
           <p className='text-[16px] my-[5px] pt-[5px]'>More Info</p>
 
           {/* line */}
-          <div className='h-[1px] w-[200px] bg-black/[0.5]'></div>
+          <div className='h-[1px] w-[80px] md:w-[200px] bg-black/[0.5]'></div>
 
-          <div className=' my-[8px] w-[150px] flex items-center gap-3 justify-between'>
+          <div className=' my-[8px] w-[80px] sm:w-[150px] flex items-center gap-3 justify-between'>
             {/* img */}
             <div className={`flex justify-center items-center rounded-full w-[60px] h-[60px] border border-indigo-600/[0.25]`}>
               <div className={`rounded-full flex justify-center items-center w-[50px] h-[50px] bg-indigo-600/[0.25]`}>
@@ -32,19 +32,19 @@ const Profile = ({item,show,setShow}) => {
             </div>
     
            {/* name and position */}
-            <div className='flex flex-col  text-[15px] '>
+            <div className='flex flex-col text-[10px]  sm:text-[15px] '>
             <p className='my-2 leading-[10px] '>{item.name}</p>
            <p className='text-black/[0.5] '>{item.text1}</p>
             </div>    
 
           </div>
 
-          <p className=' text-center text-black/[0.5] font-serif  text-[15px] '>{item.text2}</p>
+          <p className=' text-center text-black/[0.5] font-serif text-[10px]  sm:text-[15px] '>{item.text2}</p>
 
         </div>  
         :
         <div className=' delay-1000 transition linear duration-700  flex flex-col items-center justify-center'>
-           <div className={` mb-8 flex justify-center rounded-full w-[150px] h-[150px] bg-indigo-600/[0.25]`}>
+           <div className={` mb-8 flex justify-center rounded-full md:w-[150px] md:h-[150px] w-[50px] h-[50px] bg-indigo-600/[0.25]`}>
               <div className={`rounded-full  w-[120px] h-[120px] opacity-100`}>
                 <img src={item.url}/>
               </div>

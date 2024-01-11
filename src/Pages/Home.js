@@ -40,15 +40,15 @@ const Home = () => {
            </div>
           
           {/* buttons */}
-          <div className='flex items-center md:flex-row flex-col text-[16px] my-8 mx-6 '>
-            <div className='flex items-center justify-center rounded-xl mx-4 my-4 gap-4 p-2 border'><img src={App} className='bg-slate-300/[0.5] p-2 rounded-lg'/><span>Info in one place</span></div>
-            <div className='flex items-center justify-center rounded-lg mx-4 my-4 gap-4 p-2 border'><img src={Tools} className='bg-slate-300/[0.5] p-2 rounded-lg' /><span>Private tools</span></div>
-            <div className='flex items-center justify-center rounded-lg mx-4 my-4 gap-4 p-2 border'><img src={Setting} className='bg-slate-300/[0.5] p-2 rounded-lg' /><span>Wide functionality</span></div>
+          <div className='flex items-center sm:flex-row flex-col text-[16px] my-8 mx-6 '>
+            <div className='flex items-center justify-center rounded-xl mx-4 my-2 gap-4 p-2 border'><img src={App} className='bg-slate-300/[0.5] p-2 rounded-lg'/><span>Info in one place</span></div>
+            <div className='flex items-center justify-center rounded-lg mx-4 my-2 gap-4 p-2 border'><img src={Tools} className='bg-slate-300/[0.5] p-2 rounded-lg' /><span>Private tools</span></div>
+            <div className='flex items-center justify-center rounded-lg mx-4 my-2 gap-4 p-2 border'><img src={Setting} className='bg-slate-300/[0.5] p-2 rounded-lg' /><span>Wide functionality</span></div>
             
 
           </div>
 
-          <div className='flex md:flex-row flex-col items-center gap-5 mx-2 my-2 '>
+          <div className='flex  items-center gap-5 mx-2 my-2 '>
           <Button text={`Try platform`}/>
           <p className='text-indigo-600 text-[17px]'>How it Works?</p>
           </div>
@@ -57,7 +57,7 @@ const Home = () => {
         {/* leftdiv ends */}
         
         {/* rightdiv */}
-        <div className='flex h-[680px] flex-wrap flex-col items-center justify-center 2xl:w-[700px] md:w-[600px] bg-black text-white my-10'>
+        <div className='flex h-[680px] flex-wrap flex-col items-center justify-center 2xl:w-[700px] sm:w-[600px] min-w-[400px] bg-black text-white my-10'>
 
           {/* icon */}
           <div className={` rounded-full flex items-center gap-2 px-4 py-1 border-2 border-purple-400`}>
@@ -67,7 +67,7 @@ const Home = () => {
            
            {/* heading */}
          <div  className='text-center md:w-[600px] w-[300px]'>
-           <p className='md:text-[50px] text-[30px] text-white/[0.65] font-serif font-bold md:leading-[72px] mt-5'>NFD software</p>
+           <p className='md:text-[50px] text-[40px] text-white/[0.65] font-serif font-bold md:leading-[72px] mt-5'>NFD software</p>
            <p className="md:text-[50px] text-[30px] text-indigo-300/[0.5] font-serif font-bold md:leading-[40px] mb-6">“Combine”</p>
              <p className='md:text-[20px] text-center text-white/[0.5] font-serif leading-[30px] ' >
               Handle your crypto-wallets, farm activities and retrodrops on a single app.
@@ -75,9 +75,9 @@ const Home = () => {
          </div>
 
             {/* icons */}
-            <div className='flex md:flex-row flex-col items-center justify-around gap-10 w-[500px] text-[20px] border-b mb-5 '>
-            <div className='flex justify-center md:w-[200px] items-center gap-3 text-white/[0.47] cursor-pointer p-4'><FaApple className=''size={25} /><span >macOs</span></div>
-            <div className='relative  flex justify-center md:w-[200px] items-center gap-3 cursor-pointer p-4 border-b-2  border-purple-600'>
+            <div className='flex  items-center sm:justify-around gap-10 sm:w-[500px] text-[20px] border-b my-5 '>
+            <div className='flex justify-center sm:w-[200px] w-[150px] items-center gap-3 text-white/[0.47] cursor-pointer p-4'><FaApple className=''size={25} /><span >macOs</span></div>
+            <div className='relative  flex justify-center sm:w-[200px] w-[150px] items-center gap-3 cursor-pointer p-4 border-b-2  border-purple-600'>
               <IoLogoWindows className='' />
               <span>Windows</span>
               <div className='absolute top-[35px] w-[200px]' ><img src={Quad} className='object-fit' /></div>
@@ -85,7 +85,7 @@ const Home = () => {
             </div>
 
             {/* buttons */}
-            <div className='flex  md:flex-row flex-col items-center gap-5 mx-2 my-5 '>
+            <div className='flex  flex-row  items-center gap-5 mx-2 my-5 '>
           <Button text={`Download`}/>
           <p className='text-indigo-600 text-[17px]'>How it Works?</p>
           </div>
@@ -104,7 +104,7 @@ const Home = () => {
       </div>
 
       {/* aboutjs */}
-      <About/>
+      {/* <About/> */}
 
       {/* aggregator */}
       <Aggregator/>

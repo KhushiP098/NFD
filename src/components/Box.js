@@ -7,7 +7,7 @@ const Box = ({item,ind,setInd}) => {
     }
   return (
     <div onClick={()=>handler(item.id)}
-     className={`flex flex-col font-serif cursor-pointer border bg-white p-5  rounded-2xl mt-5 md:w-[520px] ${item.id===ind? "bg-purple-300/[0.3]":""}`}>
+     className={`flex flex-col font-serif cursor-pointer border bg-white p-5  rounded-2xl mt-5 sm:w-[520px] w-[350px] ${item.id===ind? "bg-purple-300/[0.3]":""}`}>
         <p className='text-[22px] text-black/[0.55] font-bold leading-[50px]'>{item.text1}</p>
 
         {
@@ -17,6 +17,7 @@ const Box = ({item,ind,setInd}) => {
 
       
     </div>
+    
   )
 }
 

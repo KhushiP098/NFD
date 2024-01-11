@@ -45,7 +45,7 @@ const Roadmap = () => {
   <div className='w-full flex flex-col'>
    
    {/* 1st section */}
-   <div className='w-full  flex flex-col  items-center justify-center bg-black overflow-hidden'>
+   <div className='w-full min-h-[1500px] flex flex-col items-start xl:items-center justify-center bg-black overflow-hidden'>
        
        {/* background circle */}
        <div className='flex items-center justify-between h-[800px] z-5'>
@@ -56,7 +56,7 @@ const Roadmap = () => {
        
        {/* heading */}
        <div className='w-full text-center h-[100px] text-white relative -top-[700px]'>
-        <p className='text-[90px]  font-serif font-bold leading-[112px] mt-5'>NFD - game changing crypto platform</p>
+        <p className='md:text-[90px] text-[50px] font-serif font-bold md:leading-[112px] mt-5'>NFD - game changing crypto platform</p>
 
         {/* small texts */}
         <div className='flex items-center my-10 text-[15px] justify-center '>
@@ -70,13 +70,13 @@ const Roadmap = () => {
         <div className='h-[50px] w-full '></div>
          
           {/* line */}
-        <div className='h-[1px]  w-full bg-white/[0.2]'></div>
+        <div className='h-[1px] xl:block hidden w-full bg-white/[0.2]'></div>
 
-        <div className='flex  mt-10 justify-around '>
+        <div className='flex flex-wrap items-center justify-center mt-10 xl:justify-around '>
 
-          <div className=' text-[16px] leading-[30px] relative -top-[44px] '>
-            <div className='h-3 w-3 blur-sm  rounded-full  bg-purple-800'></div>
-            <div className='-ml-[100px] underline leading-[40px] font-serif text-[23px]'>Stage1</div>
+          <div className='w-[250px] h-[200px] m-3 text-[16px] xl:leading-[30px] xl:relative xl:-top-[44px] '>
+            <div className='h-3 w-3 blur-sm  rounded-full  bg-purple-800 xl:block hidden'></div>
+            <div className='-ml-[100px] underline xl:leading-[40px] font-serif text-[23px]'>Stage1</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>Development</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>Activities and Aggregator</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>Alpha test</div>
@@ -85,9 +85,9 @@ const Roadmap = () => {
          
           </div>
 
-          <div className=' text-[16px] leading-[30px] relative -top-[44px] -left-[40px]'>
-          <div className='h-3 w-3 rounded-full  blur-sm bg-white'></div>
-          <div className='-ml-[100px] underline leading-[40px] font-serif text-[23px]'>Stage2</div>
+          <div className='w-[250px] h-[200px] m-3  text-[16px] xl:leading-[30px] xl:relative xl:-top-[44px] xl:-left-[40px]'>
+          <div className='h-3 w-3 rounded-full  blur-sm bg-white xl:block hidden'></div>
+          <div className='-ml-[100px] underline xl:leading-[40px] font-serif text-[23px]'>Stage2</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>ROI scanner</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>Aggregator Summary</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>Twitter Scanner tool</div>
@@ -96,9 +96,9 @@ const Roadmap = () => {
          
           </div>
 
-          <div className=' text-[16px] leading-[30px] relative -top-[44px] -left-[30px]'>
-          <div className='h-3 w-3 rounded-full  blur-sm bg-white'></div>
-          <div className='-ml-[100px] underline leading-[40px] font-serif text-[23px]'>Stage3</div>
+          <div className='w-[250px] h-[200px] m-3  text-[16px] xl:leading-[30px] xl:relative xl:-top-[44px] xl:-left-[30px]'>
+          <div className='h-3 w-3 rounded-full  blur-sm bg-white xl:block hidden'></div>
+          <div className='-ml-[100px] underline xl:leading-[40px] font-serif text-[23px]'>Stage3</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-1 w-1 animate-ping  rounded-full bg-yellow-600'></div> New sections in “Activities”</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>Launching NFD DAO</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>Expanding the calendar</div>
@@ -106,18 +106,18 @@ const Roadmap = () => {
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>NFD labs incubator</div>
           </div>
 
-          <div className=' text-[16px] leading-[30px]  relative -top-[44px] '>
-            <div className='h-3 w-3 rounded-full  blur-sm bg-white'></div>
-            <div className='-ml-[100px] underline leading-[40px] font-serif text-[23px]'>Stage4</div>
+          <div className='w-[260px] h-[200px] m-3  text-[16px] xl:leading-[30px]  xl:relative xl:-top-[44px] '>
+            <div className='h-3 w-3 rounded-full  blur-sm bg-white xl:block hidden'></div>
+            <div className='-ml-[100px] underline xl:leading-[40px] font-serif text-[23px]'>Stage4</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>Crypto arbitrage scanner</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>Alpha search AI developing <br/>based on data collected</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-1 w-1 animate-ping  rounded-full bg-green-600'></div>Adding any services based on<br/> NFD DAO votes</div>
             
           </div>
 
-          <div className=' text-[16px] leading-[30px] relative -top-[44px]'>
-          <div className='h-3 w-3 rounded-full  blur-sm bg-white'></div>
-          <div className='-ml-[100px] underline  leading-[40px] font-serif text-[23px]'>Stage5</div>
+          <div className='w-[280px] h-[200px] m-3  text-[16px] leading-[30px] xl:relative  xl:-top-[44px]'>
+          <div className='h-3 w-3 rounded-full  blur-sm bg-white xl:block hidden'></div>
+          <div className='-ml-[100px] underline  xl:leading-[40px] font-serif text-[23px]'>Stage5</div>
             <div className='flex items-center gap-2 mx-5'><div className='h-2 w-2 rounded-full bg-green-600'></div>
             The launch of Project “X” by<br/> NFD labs, which will change the <br/>culture of crypto investment
             </div>
@@ -131,10 +131,10 @@ const Roadmap = () => {
 
  {/*2nd section  */}
     <div className=' bg-gradient-to-r from-white  to-indigo-600/[0.52] flex flex-col  items-center justify-center'>
-      <div className='w-[1400px] flex bg-white rounded-lg items-center justify-between  '>
+      <div className='xl:w-[1300px] p-10 mt-10 flex lg:flex-row flex-col bg-white rounded-lg items-center justify-between  '>
 
        {/* left div */}
-       <div className='w-[500px] font-serif '>
+       <div className='md:w-[500px] w-[350px] p-10 font-serif '>
 
         {/* headings */}
         <p className='text-[50px] font-semibold leading-[60px] mt-5'>We are delighted to introduce the NFD team members to you</p>
@@ -147,8 +147,8 @@ const Roadmap = () => {
        </div>
 
        {/* right div */}
-       <div className='w-[800px] rounded-lg '>
-        <div className='m-5 grid grid-cols-3 grid-rows-2 '>
+       <div className='xl:w-[800px] md:w-[600px] w-[300px] rounded-lg '>
+        <div className='m-5 grid grid-cols-3 grid-rows-2 mx-auto '>
 
         {
           data.map((item)=>(

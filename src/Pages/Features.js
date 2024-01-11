@@ -42,23 +42,27 @@ const Features = () => {
   const [ind,setInd]=useState(0);
 
   return (
-    <div className={`mt-10 `}>
+    
+    <div className={`mt-10 w-full `}>
     
       {/* bg img */}
       
       {/* <div class="absolute left-0 top-0 right-0 w-[100%] ">
       <img src={FeaturesBg1} alt="image" class="w-full object-fill scale-x-100 "/>
-    </div> */}
+      </div> */}
 
-      <div className='  flex flex-col'>
+      <div className='  flex flex-col items-center justify-center'>
         {/* headings */}
-        <div className='text-center h-[400px]'>
-          <p className='text-[60px] font-serif font-bold leading-[72px] mb-6'>Use all the benefits of NFD</p>
+        <div className='text-center h-[300px]'>
+          <p className='sm:text-[60px] text-[45px] font-serif font-bold sm:leading-[72px] mb-10'>Use all the benefits of NFD</p>
           <p className='text-[20px] font-serif leading-[30px] '>Unlock the next level of control with customizable real-time feeds, charts,<br/> watchlists, and alerts with NFD.gg</p>
         </div>
         
         {/* img & box */}
-        <div className='flex items-center justify-between md:w-[1440px] mx-auto '>
+        <div className='flex flex-col xl:flex-row  items-center justify-center xl:justify-between xl:w-[1200px] my-10'>
+
+        <img src={data[ind]?.url} className=' xl:w-[600px] xl:h-[500px] w-[300px] h-[300px] mb-[10px]'/>
+
           <div className='flex flex-col '>
             {
               data.map((item)=>(
@@ -69,7 +73,7 @@ const Features = () => {
           </div>
 
 
-          <img src={data[ind]?.url} className='w-[800px] h-[550px]'/>
+          
           
         </div>
 
